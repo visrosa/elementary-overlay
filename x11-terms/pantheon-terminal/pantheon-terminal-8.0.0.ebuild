@@ -20,9 +20,9 @@ RDEPEND="
 	dev-libs/glib:2
 	<dev-libs/granite-7:0
 	dev-libs/libpcre2
-	gui-libs/libhandy:1
-	x11-libs/gtk+:3
-	x11-libs/vte:2.91[vala]
+	gui-libs/gtk:4
+	gui-libs/libadwaita:1
+	gui-libs/vte:2.91-gtk4[vala]
 "
 DEPEND="${RDEPEND}
 	$(vala_depend)
@@ -34,6 +34,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-	eapply "${FILESDIR}/drop-tests.patch"
+	#eapply "${FILESDIR}/drop-tests.patch"
 	eapply_user
 }
