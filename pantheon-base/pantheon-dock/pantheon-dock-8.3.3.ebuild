@@ -25,7 +25,7 @@ RDEPEND="
 "
 
 src_prepare() {
-	eapply "${FILESDIR}/find_custom.patch"
+#	eapply "${FILESDIR}/find_custom.patch"
 	eapply_user
 	vala_setup
 }
