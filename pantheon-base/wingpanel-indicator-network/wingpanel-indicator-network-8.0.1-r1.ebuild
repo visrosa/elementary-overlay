@@ -6,8 +6,10 @@ EAPI=8
 inherit gnome2 meson vala
 
 DESCRIPTION="Network indicator for Wingpanel"
-HOMEPAGE="https://github.com/elementary/wingpanel-indicator-network"
-SRC_URI="https://github.com/elementary/wingpanel-indicator-network/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/elementary/panel-network"
+SRC_URI="https://github.com/elementary/panel-network/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+
+S="${WORKDIR}/panel-network-${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
