@@ -6,12 +6,14 @@ EAPI=8
 inherit gnome2 meson vala
 
 DESCRIPTION="Notifications indicator for Wingpanel"
-HOMEPAGE="https://github.com/elementary/wingpanel-indicator-notifications"
-SRC_URI="https://github.com/elementary/wingpanel-indicator-notifications/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/elementary/panel-notifications"
+SRC_URI="https://github.com/elementary/panel-notifications/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
+
+S="${WORKDIR}/panel-notifications-${PV}"
 
 RDEPEND="
 	dev-libs/glib:2
